@@ -18,11 +18,12 @@
         @keyup.enter='search'>
         <div class="info-film" v-for= 'film in films'>
             <span>
-                {{film.title}}
+                <h2>{{film.title}}</h2>
+                <h3>{{film.original_title}}</h3>
+                <h4>{{film.original_language}}</h4>
+                <h6>{{film.vote_average}}</h6>
             </span>
-            <span>
-                
-            </span>
+            
         </div>
     </div>
 
