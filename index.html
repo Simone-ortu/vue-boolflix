@@ -13,7 +13,18 @@
 </head>
 
 <body>
-
+    <div id="app">
+        <input type="text" v-model='query'
+        @keyup.enter='search'>
+        <div class="info-film" v-for= 'film in films'>
+            <span>
+                {{film.title}}
+            </span>
+            <span>
+                
+            </span>
+        </div>
+    </div>
 
 
 
